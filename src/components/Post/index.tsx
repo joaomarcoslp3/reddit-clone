@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, HStack, Text } from '@chakra-ui/core';
-import VoteButtons from './VoteButtons.jsx';
+import VoteButtons from '../VoteButtons';
 
 export default function Post(post: any) {
   return (

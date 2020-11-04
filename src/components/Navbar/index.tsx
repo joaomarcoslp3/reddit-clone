@@ -1,6 +1,6 @@
 import { Box, Container, Flex } from '@chakra-ui/core';
 import React from 'react';
-import AddNewPost from './AddNewPost';
+import AddNewPost from '../AddNewPost';
 
 export default function Navbar() {
   return (

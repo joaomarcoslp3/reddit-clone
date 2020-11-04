@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import ViewPosts from './pages/ViewPosts';
+import Navbar from './components/Navbar/index'
+import ViewPosts from './pages/ViewPosts/index';
 
 function App() {
 

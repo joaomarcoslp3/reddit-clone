@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Container, Flex, Spinner, VStack} from '@chakra-ui/core';
-import Post from '../../components/Post';
+import {Container, VStack} from '@chakra-ui/core';
+import Post from '../../components/Post/index';
 import db from '../../lib/firebase';
 
 export default function ViewPosts() {
@@ -25,7 +25,6 @@ export default function ViewPosts() {
 
   useEffect(() => {
     db.collection('posts').orderBy('createdAt', 'desc').get().then((querySnapshot) => {
-      const _posts = [];
 
       const data: any = querySnapshot.docs.map((doc) => ({
         id: doc.id,
